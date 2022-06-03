@@ -1,2 +1,3 @@
 # rsschool-cv
-# https://github.com/KrasMax/rsschool-cv/cv
+
+# https://KrasMax.github.io/rsschool-cv/cv
