@@ -1,3 +1,29 @@
-h1 {
-   color: red; 
+body {
+   margin: 0;
+}
+
+.head {
+   width: 100%;
+   height: 50px;
+   background-color: rgb(93, 150, 131);
+}
+
+.nav_heder{
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+}
+
+nav{
+   padding-top: 15px;
+   text-align: right;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(245, 245, 231);
+   font-size: 18px;
+   padding: 0px 15px 0px 15px; 
+   margin-top: 50%;
+   
 }
