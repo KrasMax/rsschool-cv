@@ -17,17 +17,117 @@
                 <a href="#">Contact</a>
                 <a href="#">About me</a>
                 <a href="#">Skills</a>
-                <a href="#">My GITHUB</a>
+                <a href="#">Code</a>
                 <a href="#">Education</a>
+                <a href="#">Projeckt</a>
                 <a href="#">English</a>
             </nav>
         </div>
 
     </header>
 
-    <div class="content">
+    <main class="content">
+        <div class="info_block">
 
-    </div>
+            <div class="block_content">
+                <img src="./AVA_WEB.jpg" alt="Foto USER">
+            </div>
+
+            <div class="block_content">
+                <H1>MAKSIM KRASKOVSKIY</H1>
+                <h2>JUNIOR FRONT-END DEVELOPER</h2>
+            </div>
+
+        </div>
+
+        <div class="info_block">
+            <div class="block_content">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li> <a href="maximkraskovski@gmail.com">E-MAIL:</a></li>
+                    <li> <a href="https://www.linkedin.com/in/maksim-kraskovskiy-8b2a2b229">LinkedIn:</a>
+                    </li>
+                    <li> <a href="https://github.com/KrasMax">GITHUB: </a></li>
+                    <li> <a href="#">Discord: KrasMax(@KrasMax)</a> </li>
+                </ul>
+            </div>
+
+            <div class="block_content">
+                <h2>ABOUT ME</h2>
+                <p>Executive, purposeful, pedantic, I can work in a team, goal to become a full-stack developer. I have
+                    experience in managing a team, I have held both engineering positions in the field of
+                    telecommunications and management.</p>
+            </div>
+
+        </div>
+
+        <div class="info_block">
+            <div class="block_content">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>HTML, CSS (SCSS)</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>jQuery</li>
+                    <li>Webpack</li>
+                    <li>Understanding GIT</li>
+                    <li>Preparation of terms of reference</li>
+                </ul>
+            </div>
+            <div class="block_content">
+                <h2>CODE</h2>
+                <pre>
+                    <code>
+const exit = () => {
+
+    let currenrDataUser = JSON.parse(localStorage.getItem('curentUser'));
+    const URL_DATA_USER = 'https://history-auto.herokuapp.com/api/dataUser';
+                        
+    const settingFetch = {
+        method: 'PUT',
+        body: JSON.stringify(currenrDataUser),
+            headers: {
+                "Content-type": "application/json; charset=utf-8"
+                    }
+                }
+                        
+        fetch(`${URL_DATA_USER}/${dataUser.id}`, settingFetch).then(() => {
+            localStorage.removeItem('curentUser');
+            window.location.href = "index.html"
+        });
+                        
+    }
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="info_block">
+            <div class="block_content">
+                <h2>EDUCATION</h2>
+                <ul>
+                    <li> <a href="https://bgaa.by/">Minsk State Higher Aviation College</a> </li>
+                    <li> <a href="https://gb.ru/certificates/211125.en">«Basics of programming» in GeekBrains</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1pAY42WdQkJ4HTEfdYwfY-jElKw5jBoaJ/view?usp=sharing">«Development
+                            of web applications with JavaScript» in IT-Academy</a></li>
+                </ul>
+            </div>
+            <div class="block_content">
+                <h2>PROJECKT</h2>
+                <ul>
+                    <li><a href="https://krasmax.github.io/auto-app-client/index.html">auto-app-client</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info_block">
+            <div class="block_content">
+                <h2>ENGLISH</h2>
+                <p>English level: А2 (Elementary)</p>
+            </div>
+
+        </div>
+
+    </main>
 
     <footer class="basement">
 

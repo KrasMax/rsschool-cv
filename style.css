@@ -21,9 +21,36 @@ nav{
 
 a {
    text-decoration: none;
-   color: rgb(245, 245, 231);
+   color: rgb(107, 107, 1);
    font-size: 18px;
    padding: 0px 15px 0px 15px; 
    margin-top: 50%;
    
+}
+
+.content{
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+   display: flex;
+   align-content: stretch;
+   flex-direction: column;
+}
+
+.info_block{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-wrap: nowrap;
+   border-bottom: 5px groove rgb(93, 150, 131);
+}
+
+.block_content{
+   justify-content: space-between;
+   /* padding: 100px; */
+   width: 50%;
+   text-decoration: none;
+}
+h1, h2{
+   text-align: center;
 }
