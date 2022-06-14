@@ -27,13 +27,13 @@
     </header>
 
     <main class="content">
-        <div class="info_block">
+        <div class="info_block_main">
 
-            <div class="block_content">
+            <div class="block_content_head">
                 <img src="./AVA_WEB.jpg" alt="Foto USER">
             </div>
 
-            <div class="block_content">
+            <div class="block_content_head">
                 <H1>MAKSIM KRASKOVSKIY</H1>
                 <h2>JUNIOR FRONT-END DEVELOPER</h2>
             </div>
@@ -76,12 +76,7 @@
             <div class="block_content">
                 <h2>CODE</h2>
                 <pre>
-                    <code>
-const exit = () => {
-
-    let currenrDataUser = JSON.parse(localStorage.getItem('curentUser'));
-    const URL_DATA_USER = 'https://history-auto.herokuapp.com/api/dataUser';
-                        
+                    <code>                       
     const settingFetch = {
         method: 'PUT',
         body: JSON.stringify(currenrDataUser),
@@ -89,13 +84,6 @@ const exit = () => {
                 "Content-type": "application/json; charset=utf-8"
                     }
                 }
-                        
-        fetch(`${URL_DATA_USER}/${dataUser.id}`, settingFetch).then(() => {
-            localStorage.removeItem('curentUser');
-            window.location.href = "index.html"
-        });
-                        
-    }
                     </code>
                 </pre>
             </div>
@@ -120,7 +108,7 @@ const exit = () => {
         </div>
 
         <div class="info_block">
-            <div class="block_content">
+            <div class="block_content_end">
                 <h2>ENGLISH</h2>
                 <p>English level: А2 (Elementary)</p>
             </div>
@@ -131,6 +119,19 @@ const exit = () => {
 
     <footer class="basement">
 
+        <div class="foot_block">
+
+            <div>
+                <span><a href="https://github.com/KrasMax">MAKSIM KRASKOVSKIY</a></span>
+            </div>
+            <div>
+                <span>© 2022 </span>
+            </div>
+            <div>
+                <a href="https://rs.school/js/" target="blank"> <img src="./rs_school_js.svg" alt="LOGO"></a>
+            </div>
+
+        </div>
     </footer>
 
 </body>
